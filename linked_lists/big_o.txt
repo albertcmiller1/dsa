@@ -1,0 +1,25 @@
+big(O)
+
+add a node to the end: 
+    O(1)
+    just set tail.next = newNode
+
+remove node from end: 
+    O(N)
+    must traverse list so we dont lose previous 
+
+add item to front: 
+    O(1)
+    already have pointer to head 
+
+removing head 
+    O(1)
+    move pointer over and remove node 
+
+add item in middle of list:
+    O(n)
+    need to iterate though the list 
+
+find a node: 
+    O(n)
+    

@@ -1,0 +1,10 @@
+
+                        linked list             list 
+append                     O(1)                 O(1)
+pop                        O(n)                 O(1)
+prepend                    O(1)                 O(n)
+pop first                  O(1)                 O(n)
+insert                     O(n)                 O(n)
+remove                     O(n)                 O(n)
+lookup by index            O(n)                 O(1)
+lookup by value            O(n)                 O(n)
