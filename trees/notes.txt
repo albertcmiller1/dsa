@@ -1,0 +1,8 @@
+Full Tree: each node either points to 0 or 2 children. no single children (assuming a binary tree)
+Perfect Tree: the bottom level is full of children 
+Complete Tree: no gaps from left to right on the bottom level. 
+Leaf: a node with no children 
+
+
+binary search tree: the values of each number are places in order 
+    O(log(n))
