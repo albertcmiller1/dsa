@@ -1,0 +1,34 @@
+https://intellipaat.com/blog/interview-question/python-interview-questions/
+
+Q1: what is an interprited language 
+A1: an interpreter reads in files and executes line by line
+
+Q2: what is a compiled language 
+A2: the machine directly translates the program from machine code 
+
+Q3: what are the four built in datastructures 
+A3: https://www.dataquest.io/blog/data-structures-in-python/#:~:text=Python%20has%20four%20main%20data,heterogeneous%20collection%20of%20related%20objects.
+    > Lists
+    > Sets
+    > Dictionarys 
+    > Tuples 
+
+Q4: what is pep8? 
+A4: pep8 stands for Python Enhancement Proposal. It is a set of rules that specify how to read and write your code. 
+
+Q5: key features of python
+A5: 
+    > interprited
+    > dynamically typed
+    > Object oriented (https://www.techtarget.com/searchapparchitecture/definition/object-oriented-programming-OOP)
+    > cross platform (linux, windows, etc)
+    > general purpose language 
+
+Q6: How is memory managed? 
+A6: Memory management in Python involves a private heap containing all Python objects and data structures. The management of this private heap is ensured internally by the Python memory manager. (https://docs.python.org/3/c-api/memory.html#:~:text=Memory%20management%20in%20Python%20involves,by%20the%20Python%20memory%20manager)
+
+
+Q7: local vs golabl vars?
+A7: 
+    > local:  Any variable declared inside a function is known as Local variable and it’s accessibility remains inside that function only.
+    > gloabl: Any variable declared outside the function is known as Global variable and it can be easily accessible by any function present throughout the program.
