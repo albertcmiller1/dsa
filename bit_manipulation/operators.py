@@ -52,8 +52,6 @@ def countBits(n):
     
     
 
-
-
 if __name__ == "__main__":
     # print((255).bit_length()) 
     # print(bin(255))

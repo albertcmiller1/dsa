@@ -1,0 +1,17 @@
+https://www.techtarget.com/searchapparchitecture/definition/object-oriented-programming-OOP/ 
+
+Encapsulation
+    > all important information is contained inside an object and only select information is exposed 
+
+
+Abstraction
+    > Objects only reveal internal mechanisms that are relevant for the use of other objects, hiding any unnecessary implementation code
+
+
+Inheritance 
+    > Classes can reuse code from other classes
+    > Relationships and subclasses between objects can be assigned, enabling developers to reuse common logic while still maintaining a unique hierarchy
+
+
+Polymorphism 
+    > Objects are designed to share behaviors and they can take on more than one form
