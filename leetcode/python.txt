@@ -1,0 +1,7 @@
+list.sort()
+    > Tim Sort 
+    > O(nlogn) time 
+    > O(n) space 
+    
+
+strings and tuples are immutable 

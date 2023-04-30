@@ -20,6 +20,8 @@ feq = [i*i for i in range(len(nums))]
 feq = [[] for i in range(len(nums))]
 
 
+
+
 # dictionary .get method 
 dic = {
     'foo': 0
@@ -46,3 +48,5 @@ for k,v in dic.items():
 
 
 
+# generators 
+# https://www.programiz.com/python-programming/generator
