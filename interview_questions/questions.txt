@@ -6,7 +6,7 @@ A1: an interpreter reads in files and executes line by line
 Q2: what is a compiled language 
 A2: the machine directly translates the program from machine code 
 
-Q3: what are the four built in datastructures 
+Q3: what are the four built in datastructures of python
 A3: https://www.dataquest.io/blog/data-structures-in-python/#:~:text=Python%20has%20four%20main%20data,heterogeneous%20collection%20of%20related%20objects.
     > Lists
     > Sets
