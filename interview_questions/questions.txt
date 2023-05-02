@@ -52,5 +52,13 @@ def func2():
     kw(x = x + 1)
     
     
-    
+how do you remove a commit 
+git log 
+git reset --hard <hash>
+git push --force
+
+
+
+how do you init a local repo, and push to an empty repo on github
+git push origin <url>?
     
