@@ -32,3 +32,33 @@ Q7: local vs golabl vars?
 A7: 
     > local:  Any variable declared inside a function is known as Local variable and it’s accessibility remains inside that function only.
     > gloabl: Any variable declared outside the function is known as Global variable and it can be easily accessible by any function present throughout the program.
+    
+    
+    
+x = 1
+    
+    
+def func(): 
+    x += 1
+    return x
+    
+ 
+def func1(): 
+    global x
+    x += 1
+    
+def func2(): 
+    global 
+    kw(x = x + 1)
+    
+    
+how do you remove a commit 
+git log 
+git reset --hard <hash>
+git push --force
+
+
+
+how do you init a local repo, and push to an empty repo on github
+git push origin <url>?
+    

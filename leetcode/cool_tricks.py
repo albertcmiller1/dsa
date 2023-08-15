@@ -47,6 +47,5 @@ for k,v in dic.items():
 # range function ==> range(start, stop, step)
 
 
-
 # generators 
 # https://www.programiz.com/python-programming/generator
