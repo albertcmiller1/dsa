@@ -7,8 +7,6 @@ Leaf: a node with no children
 binary search tree: the values of each number are places in order 
     O(log(n))
 
-
-
 DPS 
     > Depth-first search 
     > The algorithm starts at the root node and explores as far as possible along each branch before backtracking.
@@ -19,3 +17,10 @@ BFS
 
 maximum depth of binary tree 
     > the number of nodes along the longest path from the root node down to the farthest leaf node.
+
+diameter
+    > the length of the longest path between any two nodes in a tree. this path may or may not pass through the root 
+    > note: the length of path between two nodes is represented by the number of edges (links) between them 
+
+height 
+    > number of layers between root and most bottom leaf node 
