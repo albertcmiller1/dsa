@@ -1,7 +1,11 @@
-Full Tree: each node either points to 0 or 2 children. no single children (assuming a binary tree)
-Perfect Tree: the bottom level is full of children 
-Complete Tree: no gaps from left to right on the bottom level. 
-Leaf: a node with no children 
+Full Tree:      each node either points to 0 or 2 children. no single children (assuming a binary tree)
+Perfect Tree:   the bottom level is full of children 
+Complete Tree:  no gaps from left to right on the bottom level. 
+Leaf:           a node with no children 
+Non-leaf:       a node with even a single child, either left or right or both
+
+
+binary tree node pointers can only point in one direction. As such, cycles are not allowed in binary trees.
 
 
 binary search tree: the values of each number are places in order 
@@ -24,3 +28,9 @@ diameter
 
 height 
     > number of layers between root and most bottom leaf node 
+
+Ancestor
+    > A node connected to all of the nodes below it is considered an ancestor to those nodes.
+
+Descendent
+    > either child of the node or child of some other descendent of the node.
