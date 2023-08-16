@@ -1,4 +1,10 @@
 '''
+break the arrays into sub-arrays and sort them individually, which results in a sorted array. 
+
+Stable algo 
+best case time: O(n)
+worst case time O(n^2)
+
 [2, 3, 4, 1]
 [2, 3, 1, 4]
 [2, 1, 3, 4]

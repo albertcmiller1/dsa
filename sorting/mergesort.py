@@ -1,3 +1,14 @@
+'''
+Keep splitting the array into halves until the subarrays hit a size of one, sort them, and merge the sorted arrays, which will result in an ultimate sorted array.
+Can be solved with two branch recursion. 
+
+Time Complexity 
+O(n log n)
+
+It is a stable algorithm 
+'''
+
+
 def sort_array(nums: list[int]) -> list[int]:
     def merge(arr, L, M, R):
         left = arr[L:M+1]
