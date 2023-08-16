@@ -79,9 +79,8 @@ assert sort([1, 2, 3, 0, 5, 9, 4]) == [0, 1, 2, 3, 4, 5, 9]
 
 '''
 Time Complexity 
-O(n log n)  best case
+O(n log n)  average case
 O(n^2)      worst case 
 
-Stability
-Quicksort is not a stable algorithm because it exchanges non-adjacent elements
+not stable
 '''

@@ -2,10 +2,9 @@
 Keep splitting the array into halves until the subarrays hit a size of one, sort them, and merge the sorted arrays, which will result in an ultimate sorted array.
 Can be solved with two branch recursion. 
 
-Time Complexity 
+Stable
 O(n log n)
 
-It is a stable algorithm 
 '''
 
 

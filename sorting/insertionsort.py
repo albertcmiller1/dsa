@@ -1,7 +1,7 @@
 '''
 break the arrays into sub-arrays and sort them individually, which results in a sorted array. 
 
-Stable algo 
+Stable
 best case time: O(n)
 worst case time O(n^2)
 
