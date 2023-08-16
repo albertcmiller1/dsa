@@ -34,3 +34,7 @@ Ancestor
 
 Descendent
     > either child of the node or child of some other descendent of the node.
+
+Balanced
+    > Balanced binary tree means that the height of the left-subtree is equal to the height of the right-subtree, or there is a difference of 1.
+    > In a balanced tree, we can eliminate half the nodes each time, which results in O(log n), for reasons we discussed in the merge sort chapter.
