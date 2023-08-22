@@ -1,0 +1,10 @@
+https://www.freecodecamp.org/news/python-decorators-explained-with-examples/#:~:text=To%20use%20a%20decorator%20%2Cyou,decorator%20function%20with%20an%20%40%20symbol.
+
+You'll use a decorator when you need to change the behavior of a function without modifying the function itself. 
+
+To create a decorator function in Python... 
+    > create an outer function that takes a function as an argument. 
+    > There is also an inner function that wraps around the decorated function.
+
+You can use decorators with classes as well
+    > there is no @ character involved. With the __call__ method the decorator is executed when an instance of the class is created.
