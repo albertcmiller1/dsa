@@ -6,7 +6,7 @@ from time import perf_counter
 def measure_performance(func):
     '''Measure performance of a function'''
 
-    @wraps(func)
+    @wraps(func) # the @functools.wraps decorator will preserve information about the original function. otherwise the incoming func will think its the wrapper 
     def wrapper(*args, **kwargs):
         tracemalloc.start()
         start_time = perf_counter()
