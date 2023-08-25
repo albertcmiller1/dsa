@@ -1,5 +1,6 @@
 from datetime import datetime
 from functools import wraps
+import pprint
 
 class Initial: 
     def __init__(self, *args, **kwargs):
@@ -30,12 +31,12 @@ class Transition:
         def wrapper(*args, **kwargs):
             publisher = args[0]
             
+            print("the transition wrapper is getting called now.")
             # print(publisher.msg)
             # print(args)             # (<__main__.Publisher object at 0x1045b3970>, 'fee', 'fi')
             # print(kwargs)           # {'fo': 'fo', 'fum': 'fum'}
             # print(self.name)        # Initial, a string
 
-            # how does self.name get set? 
             publisher.current_state = globals()[self.name](*args[1:], **kwargs)
             return func(*args, **kwargs)
 
@@ -63,18 +64,31 @@ class Publisher:
         print("im the polling function from the publisher class")
 
 
-# print(globals())
-p = Publisher()
-print("\n")
+p = Publisher() # the decorators will get initialized first, the the publisher __init__ will then get initialized 
+# print(f"\nglobals: ")
+# pprint.pprint(globals())
+# print("\n")
+
 p.start("fee", "fi", fo="fo", fum="fum")
-# print(p.current_state)
-print(p.current_state.args)
-# print(p.current_state.kwargs)
-p.write("one", "two", fo="three", fum="four")
-print(p.current_state.args)
 
 
+# p.write("one", "two", fo="three", fum="four")
+# print(p.current_state.args)
+
+print("\n")
 if isinstance(p.current_state, Initial):
-    print("p object is in current state mode")
+    print("p.current_state object is of type Initial")
+    print(p.current_state)
+    print(f"p.current_state class attributes: {p.current_state.args} + {p.current_state.kwargs}")
+    print(isinstance(p.current_state, Initial))
+    print(isinstance(p, Publisher))
+    print(globals()['Initial'])
+    print(p.current_state.args)
+    print(p.current_state.kwargs)
 else: 
-    print("p object is NOT in current state mode")
+    print(f"p object is NOT in current state mode. Current state: {p.current_state}")
+
+
+# print(f"\nglobals: ")
+# pprint.pprint(globals())
+# print("\n")
