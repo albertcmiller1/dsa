@@ -1,19 +1,3 @@
-'''
-another way to insert: 
-TreeNode* insert(TreeNode* root, int val) {
-    if (!root) {
-        return new TreeNode(val);
-    }
-
-    if (val > root->val_) { 
-        root->right = insert(root->right, val);
-    } else if (val < root->val_) {
-        root->left = insert(root->left, val);
-    }
-    return root;
-}
-'''
-
 class Node: 
     def __init__(self, value):
         self.value = value 
@@ -48,6 +32,41 @@ class BinarySearchTree:
                     return True 
                 temp = temp.right 
             
+    def insert_resursive(self, root, val):
+        if not root: 
+            return Node(val)
+
+        if val < root.val: 
+            root.left = self.insert_resursive(root.left, val)
+        elif val > root.val: 
+            root.right = self.insert_resursive(root.right, val)
+        return root 
+
+    def find_min(self, root):
+        # min val should always be bottom left 
+        curr = root
+        while curr and curr.left: 
+            curr = curr.left
+        return curr
+
+    def remove(self, root, val):
+        if not root: 
+            return None 
+
+        if val > root.val: 
+            root.right = self.remove(root.right, val)
+        elif val < root.val: 
+            root.left = self.remove(root.left, val)
+        else: 
+            if not root.left: 
+                return root.right
+            elif not root.right: 
+                return root.left 
+            else: 
+                min_node = self.find_min(root.right)
+                root.val = min_node.val 
+                root.right = self.remove(root.right, min_node.val) 
+        return root         
 
 
 tree = BinarySearchTree()
@@ -63,10 +82,6 @@ tree.insert(4)
            \
             4  
 '''
-# print(tree.root.value)
-# print(tree.root.left.value)
-# print(tree.root.right.value)
-# print(tree.root.right.right.value)
 
 
 def value_in_tree(root, target):
@@ -82,3 +97,13 @@ def value_in_tree(root, target):
 assert value_in_tree(tree.root, 3) == True
 assert value_in_tree(tree.root, 8) == False
 
+
+'''
+        4
+       / \
+      3   6
+    /    / \
+   2    5    7
+
+removing can be tricky when we want to remove 4 or 6   
+'''

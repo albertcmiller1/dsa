@@ -1,0 +1,9 @@
+https://medium.com/testcult/intro-to-test-framework-pytest-5b1ce4d011ae
+
+General 
+> File names should start or end with “test”, as in test_example.py or example_test.py
+> f tests are defined as methods on a class, the class name should start with “Test”, as inTestExample. The class should not have an __init__ method.
+> Test method names or function names should start with “test_”, as in test_example. Methods with names that don’t match this pattern won’t be executed as tests.
+> to run tests, get to parent of tests/ dir and run pytest tests -v 
+
+
