@@ -10,7 +10,7 @@ class BinarySearchTree:
 
     def insert(self, value):
         new_node = Node(value)
-        if self.root == None: 
+        if not self.root: 
             self.root = new_node
             return True
         
@@ -75,6 +75,7 @@ tree.insert(2)
 tree.insert(1)
 tree.insert(3)
 tree.insert(4)
+
 '''
         2
        / \
