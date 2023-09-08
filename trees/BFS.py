@@ -12,33 +12,40 @@ def BFS(root):
 
         for i in range(len(queue)):
             curr = queue.popleft()
-            # print(f"curr.value: {curr.value}")
-            # if curr.left: 
-            #     queue.append(curr.left)
-            # if curr.right: 
-            #     queue.append(curr.right)
-
-            if curr:
+            print(f"curr.value: {curr.value}")
+            if curr.left: 
                 queue.append(curr.left)
+            if curr.right: 
                 queue.append(curr.right)
+
+            # if curr:
+            #     queue.append(curr.left)
+            #     queue.append(curr.right)
 
         level += 1
 
 
 from BST import BinarySearchTree
 
-tree = BinarySearchTree()
 
-tree.insert(2)
-tree.insert(1)
-tree.insert(3)
-tree.insert(4)
-'''
-        2
-       / \
-      1   3
-           \
-            4  
-'''
+def main():
+    tree = BinarySearchTree()
 
-BFS(tree.root) # 2 1 3 4
+    tree.insert(2)
+    tree.insert(1)
+    tree.insert(3)
+    tree.insert(4)
+    '''
+            2
+        / \
+        1   3
+            \
+                4  
+    '''
+
+    BFS(tree.root) # 2 1 3 4
+
+
+
+if __name__ == "__main__":
+    main()

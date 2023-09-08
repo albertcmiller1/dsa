@@ -6,7 +6,7 @@ def DFS_inorder(root):
     DFS_inorder(root.right)
 
 def DFS_preorder(root):
-    # first valueue of preorder traversal will always be the root -> IMPORTANT 
+    # first value of preorder traversal will always be the root -> IMPORTANT 
     # the second valueue will always be the root of the left subtree 
     if not root: 
         return 
@@ -23,13 +23,16 @@ def DFS_postorder(root):
 
 
 from BST import BinarySearchTree
+def make_tree():
+    tree = BinarySearchTree()
 
-tree = BinarySearchTree()
+    tree.insert(2)
+    tree.insert(1)
+    tree.insert(3)
+    tree.insert(4)
 
-tree.insert(2)
-tree.insert(1)
-tree.insert(3)
-tree.insert(4)
+    return tree
+
 '''
         2
        / \
@@ -38,4 +41,9 @@ tree.insert(4)
             4  
 '''
 
-DFS_inorder(tree.root) # 1 2 3 4
+def main():
+    tree = make_tree()
+    DFS_inorder(tree.root) # 1 2 3 4
+
+if __name__ == "__main__":
+    main()

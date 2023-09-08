@@ -69,42 +69,33 @@ class BinarySearchTree:
         return root         
 
 
-tree = BinarySearchTree()
-
-tree.insert(2)
-tree.insert(1)
-tree.insert(3)
-tree.insert(4)
-
-'''
-        2
-       / \
-      1   3
-           \
-            4  
-'''
 
 
-def value_in_tree(root, target):
-    if not root: return False
+def main():
+    tree = BinarySearchTree()
 
-    if target > root.value: 
-        return value_in_tree(root.right, target)
-    elif target < root.value: 
-        return value_in_tree(root.left, target)
-    else: 
-        return True
+    tree.insert(2)
+    tree.insert(1)
+    tree.insert(3)
+    tree.insert(4)
 
-assert value_in_tree(tree.root, 3) == True
-assert value_in_tree(tree.root, 8) == False
+    '''
+         2
+        / \
+       1   3
+            \
+             4  
+    '''
 
+    '''
+         4
+        / \
+       3   6
+      /    / \
+     2    5    7
 
-'''
-        4
-       / \
-      3   6
-    /    / \
-   2    5    7
+    removing can be tricky when we want to remove 4 or 6   
+    '''
 
-removing can be tricky when we want to remove 4 or 6   
-'''
+if __name__ == "__main__":
+    main()
