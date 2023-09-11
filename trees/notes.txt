@@ -6,7 +6,8 @@ Non-leaf:       a node with even a single child, either left or right or both
 
 
 binary tree node pointers can only point in one direction. As such, cycles are not allowed in binary trees.
-
+> all nodes to right of root must be greater than root
+> all nodes to left of root must be less than root
 
 binary search tree: the values of each number are places in order 
     O(log(n))
