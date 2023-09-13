@@ -21,6 +21,20 @@ def DFS_postorder(root):
     DFS_postorder(root.right)
     print(root.value)
 
+def dfs_itererave(root):
+    # https://www.youtube.com/watch?v=5LUXSvjmGCw&ab_channel=NeetCode
+    # https://www.scaler.com/topics/iterative-inorder-traversal/
+    stack = []
+    curr = root
+
+    while curr or stack: 
+        while curr: 
+            stack.append(curr)
+            curr = curr.left
+        curr = stack.pop()
+    curr = curr.right
+
+
 
 from BST import BinarySearchTree
 def make_tree():
