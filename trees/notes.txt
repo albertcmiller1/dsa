@@ -12,13 +12,16 @@ binary tree node pointers can only point in one direction. As such, cycles are n
 binary search tree: the values of each number are places in order 
     O(log(n))
 
-DPS 
+DFS 
     > Depth-first search 
     > The algorithm starts at the root node and explores as far as possible along each branch before backtracking.
+    > uses a stack 
 
 BFS 
     > Breadth-first search
     > It starts at the tree root and explores all nodes at the present depth prior to moving on to the nodes at the next depth level.
+    > uses a stack 
+    
 
 maximum depth of binary tree 
     > the number of nodes along the longest path from the root node down to the farthest leaf node.
@@ -39,3 +42,4 @@ Descendent
 Balanced
     > Balanced binary tree means that the height of the left-subtree is equal to the height of the right-subtree, or there is a difference of 1.
     > In a balanced tree, we can eliminate half the nodes each time, which results in O(log n), for reasons we discussed in the merge sort chapter.
+
