@@ -1,0 +1,9 @@
+E <= V^2
+E -> edges 
+V -> number of verticies aka nodes 
+
+
+three ways to represent a graph: 
+    1. Matrix (common)
+    2. Adjacency Matric (less common)
+    3. Adjaceny List (common)
