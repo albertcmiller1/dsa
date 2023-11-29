@@ -1,5 +1,6 @@
 from collections import deque 
 # https://dev.to/v_it_aly/python-deque-vs-listwh-25i9#:~:text=Second%2C%20because%20deques%20are%20implemented,node%20on%20a%20given%20position.
+
 def BFS(root):
     queue = deque()
 
@@ -10,7 +11,7 @@ def BFS(root):
     while queue:
         print("level: ", level)
 
-        for i in range(len(queue)):
+        for _ in range(len(queue)):
             curr = queue.popleft()
             print(f"curr.value: {curr.value}")
             if curr.left: 
@@ -36,11 +37,11 @@ def main():
     tree.insert(3)
     tree.insert(4)
     '''
-            2
+         2
         / \
-        1   3
+       1   3
             \
-                4  
+             4  
     '''
 
     BFS(tree.root) # 2 1 3 4
@@ -49,3 +50,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
