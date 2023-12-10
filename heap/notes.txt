@@ -1,0 +1,6 @@
+tree like data structure (actually an array)
+add pop in log(N) time
+get min value in O(N) -> if min heap 
+
+
+heapify runs in O(N)
