@@ -1,0 +1,4 @@
+Rehashing 
+Collisions 
+    > Chaining 
+    > Open Addressing 
