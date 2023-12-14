@@ -20,7 +20,10 @@ feq = [i*i for i in range(len(nums))]
 feq = [[] for i in range(len(nums))]
 
 
+foo = (1, 2, 3)
+new_foo = [*foo]
 
+print((0<=5<=9))
 
 # dictionary .get method 
 dic = {
