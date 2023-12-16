@@ -25,6 +25,7 @@ for src, dst in edges:
         adjList[dst] = []
     adjList[src].append(dst)
 
+print(adjList)
 
 '''
         A
