@@ -1,0 +1,110 @@
+python has "names" not variables... 
+
+how are python objects stored in memory? 
+> names -> references -> objects 
+> All values in Python are references
+
+
+Different types of objects: 
+    > Simple 
+        > ie) numbers and strings 
+    > Container 
+        > ie) dict and list 
+        > container objects can contain simple objects, or other container objects
+
+What's a reference? 
+    > a name or a container object that points at another object 
+    > every variable or object has a reference count 
+
+local vs global namespaces
+    > if refcounts decrease when an object goes out of scope, what happends to the objects in the global namespace? 
+        > global variables will never go out of scope 
+        > refcount never reaches 0 
+        > avoid putting large or complex objects in the global namespace 
+
+every python object holds 3 things: 
+    1. its type 
+    2. a reference count 
+    3. its value 
+
+two main types of garbage collection: 
+    > reference counting 
+        > keep track of number of references, when refcount == 0: delete oboject 
+        > cascading effect
+            > decrease ref count of any object the deleted object was pointing to 
+        > good news
+            > easy to implement 
+        > bad news  
+            > lots of space overhead (for every object)
+            > execution overhead 
+            > not greate for thread saftey 
+            > doesnt detect cyclical references 
+    > tracing 
+        > uses algo called "mark and sweep" 
+        > this is run when the number of objects in memory is greater than a threshold 
+        > find all objects in memory that still have references to them, and delete the ones that do not have references 
+        > this helps to catch cyclical refrences 
+
+    > python uses reference counting and generationl (a type of tracing GC)
+
+    > generational garbage collection
+        > based on the theory that most objects die young 
+        > python maintains a list of every object created as a program is run 
+        > actually, it makes 3
+            > generation 0
+            > generation 1
+            > generation 2
+        > newly created objects are stored in generation 0
+        > if an object survies GC, it gets promoted to gen 1
+        > every object it only stored in 1 of the 3 lists 
+
+        > obly container objects with a refcount greater than 0 will be stored in a generational list 
+        > when the number of objects in a generation reaches a threshold, python runs a garbage collection algo on that genaration, and any generations younger than it
+
+        what happens when the collection cycle is run? 
+            > python makes a list for objects to discard 
+            > it runs an algorithm to detect reference cycles
+            > if an object has no outside references, add it to the discard list 
+            > when the cycle is done, free up the objects on the discard list 
+
+    > after garbage collection, the size of the program likely wont shrink
+        > the freed memory is fragmented 
+            > ie) its not freed in one continuous block
+        > when we say memory is freed during garbage collection, its realeased back to python to use for other objects, not necessarily to the system 
+        
+
+
+    > python uses both 
+
+
+
+GIL, global interpreter lock 
+    > prevents multiple python threds from executing python code at the same time 
+    > one gil per each interpreter
+    > only one thread can run in the interpreter at a time 
+    > this is needed to prevent reference counts to be altered concurently 
+    > good news 
+        > reference counting is fast and easy to implement 
+    > bad news 
+        > in a python program, no matter how many threads exist, only one thread will be executed at a time
+
+    > want to take advantage of multiple cores? 
+        > use multi-processing instead of multi-threading 
+        > each process will have its own GIL
+
+
+
+High Address 
+------------------
+    Stack
+------------------
+    Heap
+------------------
+    Unitialized Data
+------------------
+    Initialized Data
+------------------
+Low Address 
+
+
+

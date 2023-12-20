@@ -1,3 +1,8 @@
+'''
+python3 -m dis hello.py 
+'''
+
+
 # interesting return statement 
 def is_alnum(c):
     return (
@@ -35,6 +40,10 @@ dic.get(key, value)
 key: required 
 value: optional --> A value to return if the specified key does not exist.
 '''
+
+
+toot = { i:[] for i in range(5)}
+print(toot) # {0: [], 1: [], 2: [], 3: [], 4: []}
 
 
 # dictionary .items method 
