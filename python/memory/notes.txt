@@ -3,9 +3,14 @@ python has "names" not variables...
 how are python objects stored in memory? 
 > names -> references -> objects 
 > All values in Python are references
+> https://www.tutorialspoint.com/how-are-variables-stored-in-python-stack-or-heap
+> https://realpython.com/python-variables/#object-references
+> https://stackoverflow.com/questions/6158907/what-does-python-treat-as-reference-types
+> https://realpython.com/pointers-in-python/
 
 
 Different types of objects: 
+    > everything in python is an object 
     > Simple 
         > ie) numbers and strings 
     > Container 
