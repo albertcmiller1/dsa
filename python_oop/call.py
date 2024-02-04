@@ -1,4 +1,4 @@
-class Schemas: 
+class Albert: 
     def __init__(self, albert):
         print("hello init function")
         self.albert = albert
@@ -8,7 +8,6 @@ class Schemas:
         return self.albert
 
 
-foo = Schemas("chris")
-doo = Schemas("chris")
+foo = Albert("chris")
+doo = Albert("albert")
 foo() 
-# print(foo.albert)

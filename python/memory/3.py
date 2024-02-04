@@ -1,8 +1,8 @@
-x = 300 # ref count = 1
-y = 300 # ref count = 2
-z = [300, 300] # ref count = 4
-x = True # ref count = 3
-del y  # ref count = 2
+x = 300         # ref count = 1
+y = 300         # ref count = 2
+z = [300, 300]  # ref count = 4
+x = True        # ref count = 3
+del y           # ref count = 2
 
 '''
 the del keyword 
