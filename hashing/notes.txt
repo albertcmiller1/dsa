@@ -2,3 +2,93 @@ Rehashing
 Collisions 
     > Chaining 
     > Open Addressing 
+
+
+
+
+
+560. Subarray Sum Equals K
+Given an integer array nums and an integer k, find the number of subarrays whose sum is equal to k.
+
+> we know that any difference in the prefix sum equal to k represents a subarray with a sum equal to k
+> if a subarray ends at i with a sum of k, then curr - k must have been seen before.
+> If curr - k existed as a prefix before this point and our current prefix is curr, then the difference between these two prefixes is curr - (curr - k) = k, which is exactly what we are looking for.
+> f the prefix curr - k occurred multiple times before (due to negative numbers), then each of those prefixes could be used as a starting point to form a subarray ending at the current index with a sum of k
+
+k = 3
+nums     = [1, 2, 1, 2, 1]
+curr_sum = [1, 3, 4, 6, 7]
+ans = 
+    [1, 2]
+    [1, 2]
+    [2, 1]
+    [2, 1]
+
+
+class Solution:
+    def subarraySum(self, nums: List[int], k: int) -> int:
+        counts      = {} # maps prefix sums to how often they occur
+        counts[0]   = 1  # empty prefix has a sum of 0
+        ans         = 0
+        curr_sum    = 0
+
+        for num in nums:
+            curr_sum += num
+            diff      = curr_sum - k
+            if diff in counts: 
+                ans += counts[diff]
+
+            counts[curr_sum] = 1 + counts.get(curr_sum, 0)
+    
+        return ans
+
+diff in counts occurs 4 times. 
+curr_sum = [1, 3, 4, 6, 7]
+
+counts = {
+    0: 1
+}
+---------------------
+diff = 1 - 3 = -2
+counts = { 
+    0: 1 
+}
+---------------------
+diff = 3 - 3 = 0
+counts = { 
+    0: 1, 
+    1: 1 
+}
+ans = 1
+---------------------
+diff = 4 - 3 = 1
+counts = { 
+    0: 1, 
+    3: 1, 
+    4: 1 
+}
+ans = 2
+---------------------
+diff = 6 - 3 = 3
+counts = { 
+    0: 1, 
+    3: 1, 
+    4: 1, 
+    6: 1 
+}
+diff = 7 - 3 = 4
+counts = { 
+    0: 1,
+    3: 1, 
+    4: 1, 
+    6: 1, 
+    7: 1 
+}
+
+
+
+ans = 
+[1, 2]
+[1, 2]
+[2, 1]
+[2, 1]
