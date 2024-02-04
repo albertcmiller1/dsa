@@ -6,6 +6,7 @@ Encapsulation
 
 Abstraction
     > Objects only reveal internal mechanisms that are relevant for the use of other objects, hiding any unnecessary implementation code
+    > abstract classes and methods
 
 
 Inheritance 

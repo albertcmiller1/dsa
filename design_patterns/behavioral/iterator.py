@@ -18,7 +18,6 @@ class LinkedList:
         self.curr = self.head 
         return self 
 
-
     # Iterate 
     def __next__(self): 
         if self.curr: 
@@ -30,10 +29,10 @@ class LinkedList:
 
         
 
-head = ListNode(1)
-head.next = ListNode(2)
-head.next.next = ListNode(3)
-myList = LinkedList(head)
+head            = ListNode(1)
+head.next       = ListNode(2)
+head.next.next  = ListNode(3)
+myList          = LinkedList(head)
 
 for n in myList: 
     print(n)
