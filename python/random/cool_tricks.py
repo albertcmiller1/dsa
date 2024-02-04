@@ -41,7 +41,7 @@ key: required
 value: optional --> A value to return if the specified key does not exist.
 '''
 
-
+# dictionary comprehension 
 toot = { i:[] for i in range(5)}
 print(toot) # {0: [], 1: [], 2: [], 3: [], 4: []}
 
@@ -61,3 +61,6 @@ for k,v in dic.items():
 
 # generators 
 # https://www.programiz.com/python-programming/generator
+
+
+"cool_beans".replace("_", " ")

@@ -1,12 +1,17 @@
 https://www.techtarget.com/searchapparchitecture/definition/object-oriented-programming-OOP/ 
 
-Encapsulation
-    > all important information is contained inside an object and only select information is exposed 
-
 
 Abstraction
     > Objects only reveal internal mechanisms that are relevant for the use of other objects, hiding any unnecessary implementation code
     > abstract classes and methods
+
+Encapsulation
+    > all important information is contained inside an object and only select information is exposed 
+    > the data members that describe an object are hidden from environment that is external to class.
+    > In Python, prefixing name of variable/method with single or double underscore to emulate behavior of protected and private access modifiers.
+    > https://www.tutorialspoint.com/python/python_encapsulation.htm 
+
+
 
 
 Inheritance 
@@ -16,3 +21,4 @@ Inheritance
 
 Polymorphism 
     > Objects are designed to share behaviors and they can take on more than one form
+    > polymorphism occurs when each sub class provides its own implementation of an abstract method in base class.
