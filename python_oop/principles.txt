@@ -1,24 +1,40 @@
 https://www.techtarget.com/searchapparchitecture/definition/object-oriented-programming-OOP/ 
+https://en.wikipedia.org/wiki/SOLID
+
+Four Pillars of OOP: 
+    1. Abstraction
+        > Objects only reveal internal mechanisms that are relevant for the use of other objects, hiding any unnecessary implementation code
+        > abstract classes and methods
+
+    2. Encapsulation
+        > all important information is contained inside an object and only select information is exposed 
+        > the data members that describe an object are hidden from environment that is external to class.
+        > In Python, prefixing name of variable/method with single or double underscore to emulate behavior of protected and private access modifiers.
+        > https://www.tutorialspoint.com/python/python_encapsulation.htm 
+
+    3. Inheritance 
+        > Classes can reuse code from other classes
+        > Relationships and subclasses between objects can be assigned, enabling developers to reuse common logic while still maintaining a unique hierarchy
+
+    4. Polymorphism 
+        > Objects are designed to share behaviors and they can take on more than one form
+        > polymorphism occurs when each sub class provides its own implementation of an abstract method in base class.
 
 
-Abstraction
-    > Objects only reveal internal mechanisms that are relevant for the use of other objects, hiding any unnecessary implementation code
-    > abstract classes and methods
+SOLID Principle 
+    S: Single Responsiblility Principle
+        > There should never be more than one reason for a class to change.
+        > every class should have only one responsibility
 
-Encapsulation
-    > all important information is contained inside an object and only select information is exposed 
-    > the data members that describe an object are hidden from environment that is external to class.
-    > In Python, prefixing name of variable/method with single or double underscore to emulate behavior of protected and private access modifiers.
-    > https://www.tutorialspoint.com/python/python_encapsulation.htm 
+    O: Open-Closed Principle
+        > software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification
+        > an entity can allow its behaviour to be extended without modifying its source code.
 
+    L: Liskov substitution principle
+        > Functions that use pointers or references to base classes must be able to use objects of derived classes without knowing it
 
+    I: Interface segregation principle
+        > Clients should not be forced to depend upon interfaces that they do not use.
 
-
-Inheritance 
-    > Classes can reuse code from other classes
-    > Relationships and subclasses between objects can be assigned, enabling developers to reuse common logic while still maintaining a unique hierarchy
-
-
-Polymorphism 
-    > Objects are designed to share behaviors and they can take on more than one form
-    > polymorphism occurs when each sub class provides its own implementation of an abstract method in base class.
+    D: Dependency inversion principle
+        > Depend upon abstractions, not concretes.
