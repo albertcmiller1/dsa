@@ -21,7 +21,7 @@ start()
 
 try: 
     print("hi")
-    # raise FatalException
+    raise FatalException
 except FatalException as fe: 
     print(f"fatal error: {fe}")
     raise fe 

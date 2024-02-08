@@ -23,11 +23,7 @@ class Employee:
 e1 = Employee("Bhavana", 24)
 e2 = Employee("Rajesh", 26)
 e3 = Employee("John", 27)
+e4 = Employee.new_employee("Anil", 21)
 
 e1.show_count()
 Employee.show_count()
-
-e4 = Employee.new_employee("Anil", 21)
-Employee.show_count()
-
-
