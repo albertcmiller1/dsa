@@ -1,20 +1,31 @@
-def DFS_inorder(root):
-    if not root: 
-        return 
-    DFS_inorder(root.left)
-    print(root.value)
-    DFS_inorder(root.right)
-
 def DFS_preorder(root):
-    # first value of preorder traversal will always be the root -> IMPORTANT 
-    # the second valueue will always be the root of the left subtree 
+    '''
+    first value of preorder traversal will always be the root -> IMPORTANT 
+    the second value will always be the root of the left subtree 
+    '''
     if not root: 
         return 
     print(root.value)
     DFS_preorder(root.left)
     DFS_preorder(root.right)
 
+def DFS_inorder(root):
+    '''
+    for any given node, its value is not printed until all values in the left subtree are printed, 
+    and values in its right subtree are not prited until after that 
+    '''
+    if not root: 
+        return 
+    DFS_inorder(root.left)
+    print(root.value)
+    DFS_inorder(root.right)
+
+
 def DFS_postorder(root):
+    '''
+    Notice that for any given node, no values in its right subtree are printed until all values in its left subtree are printed,
+    and its own value is not printed until after that.
+    '''
     if not root: 
         return 
     DFS_postorder(root.left)
