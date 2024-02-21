@@ -21,7 +21,6 @@ print_global_variable()
 modify_global_variable_correctly()
 
 '''
-
 In Python, you can access global variables from within a function without any issues. 
 However, if you want to modify a global variable within a function, 
 you need to use the global keyword to explicitly declare that you intend to modify the global variable, 
