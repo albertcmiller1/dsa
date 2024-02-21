@@ -5,7 +5,8 @@ V -> number of verticies aka nodes
 
 
 three ways to represent a graph: 
-    1. Matrix (common)                      -> list of lists 
-    2. Adjacency Matric (less common)       -> sqaure matrix where the dimentions represent the nodes. typically square. ex) adjMatrix[v1][v2] = 1 means an edge exists from v1 to v2
-    3. Adjaceny List (common)               -> basically a linked list/tree, but holds a list of pointers each node points to 
+    1. Array of Edges                       -> build an adjaceny list (map)
+    2. Matrix (common)                      -> list of lists 
+    3. Adjacency Matrix (less common)       -> sqaure matrix where the dimentions represent the nodes. typically square. ex) adjMatrix[v1][v2] = 1 means an edge exists from v1 to v2
+    4. Adjaceny List (common)               -> basically a linked list/tree, but holds a list of pointers each node points to 
 

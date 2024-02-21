@@ -14,6 +14,7 @@ adjList = { "A": [], "B": [] }
 Example problem: 
 
 given directed edges, build an adjacency list 
+AKA array of edges 
 '''
 
 edges = [["A", "B"], ["B", "C"], ["B", "E"], ["C", "E"], ["E", "D"]]
