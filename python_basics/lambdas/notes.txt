@@ -1,0 +1,3 @@
+def statements are compound statements so they can't be used where an expression is required, that's why sometimes lambda's are used.
+
+Note that lambda is equivalent to what you'd put in a return statement of a def. Thus, you can't use statements inside a lambda, only expressions are allowed.

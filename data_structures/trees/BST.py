@@ -1,3 +1,10 @@
+'''
+For each node, all values in its left subtree are less than the value in the node, and all values in its right subtree are greater than the value in the node.
+This property also implies that values in a BST must be unique.
+Searching, adding, and removing can be done in O(log(N))
+An inorder DFS traversal prioritizing left before right on a BST will handle the nodes in sorted order.
+'''
+
 class Node: 
     def __init__(self, value):
         self.value = value 
