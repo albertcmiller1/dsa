@@ -39,3 +39,41 @@ for i in range(n):
             graph[i].append(j)
 
 print(graph)
+
+
+'''
+[Time]
+time complexity of DFS on a graph is usually O(n+e), where n is the number of nodes and 3 is the number of edges 
+in the worst case scenario where every node is connected with every other node, e = n^2
+
+> each node is visited only once 
+> we iterate over a node's edges only when we are visiting that node 
+> because we can only visit a node once, a node's edges are only iterated over once 
+> therefore, all edges are iterated over only once, which costs O(e)
+
+[Space]
+when we build adj_list, we are storing all the edges in arrays. 
+we will also need some space for the recursion call stack, O(n) in the worst case. 
+space complexity is O(n+e)
+
+'''
+
+# recursive method to visit all neighbors 
+def dfs(node):
+    seen = set()
+    for neighbor in graph[node]:
+        # the next 2 lines are needed to prevent cycles
+        if neighbor not in seen:
+            seen.add(neighbor)
+            dfs(neighbor)
+
+# iterative method to visit all neighbors 
+def dfs(start):
+    seen = set()
+    stack = [start]
+    while stack:
+        node = stack.pop()
+        for neighbor in graph[node]:
+            if neighbor not in seen:
+                seen.add(neighbor)
+                stack.append(neighbor)
