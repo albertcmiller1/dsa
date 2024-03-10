@@ -1,6 +1,15 @@
 tree like data structure (actually an array)
-add pop in log(N) time
-get min value in O(N) -> if min heap 
 
+A heap is a great option whenever you need to find the maximum or minimum of something repeatedly.
+
+If a heap is configured to find/remove the min element, it's called a min heap. 
+If it's configured to find/remove the max element, it's called a max heap.
+
+If you're dealing with numbers and you want to deal with the opposite type of heap that your language implements, an easy way to do this is to multiply all numbers by -1.
+python defaults to a min heap. 
+
+Add an element:             O(log N)
+Remove the minimum element: O(logn)
+Find the minimum element:   O(1)
 
 heapify runs in O(N)
