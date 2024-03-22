@@ -1,0 +1,8 @@
+A greedy algorithm is any algorithm that makes the locally optimal decision at every step.
+Most greedy problems will be asking for the maximum or minimum of something, but not always.
+what makes a decision "optimal"?
+    > if we are choosing some elements and the problem wants us to find the maximum sum of elements we take, then given a choice between two numbers, it is optimal to take the larger one.
+
+what makes a decision "local"? 
+    > A decision is local when it considers only the available options at the current step. 
+    > It is based on the information it has at the time, and doesn't consider any consequences that may happen in the future from this decision.

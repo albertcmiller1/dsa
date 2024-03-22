@@ -9,7 +9,8 @@ If you're dealing with numbers and you want to deal with the opposite type of he
 python defaults to a min heap. 
 
 Add an element:             O(log N)
-Remove the minimum element: O(logn)
+Remove the minimum element: O(log N)
 Find the minimum element:   O(1)
+heapify:                    O(N)
 
 heapify runs in O(N)

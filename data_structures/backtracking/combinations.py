@@ -1,12 +1,11 @@
 from typing import List
-def subsets(nums: List[int]) -> List[List[int]]:
-    res = []
-
+def subsets(nums):
+    soln   = []
     subset = []
 
     def dfs(i):
         if i >= len(nums):
-            res.append(subset.copy())
+            soln.append(subset[:])
             return
         
         # decision to include nums[i]
@@ -18,7 +17,7 @@ def subsets(nums: List[int]) -> List[List[int]]:
         dfs(i + 1)
 
     dfs(0)
-    return res
+    return soln
 
 if __name__ == "__main__":
     print(subsets([1, 2, 3]))

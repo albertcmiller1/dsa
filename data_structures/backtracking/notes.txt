@@ -1,0 +1,50 @@
+How many combinations are possible with 3 binary numbers? 
+        root 
+    1         0 
+1       0  1     0 
+num_options ^ num_solts 
+2^3
+
+How many combinations are possible with 3 letters of the alphabet? 
+26^3
+
+Backtracking is an optimization that involves abandoning a "path" once it is determined that the path cannot lead to a solution. 
+    > In an exhaustive search, we generate all possibilities and then check them for solutions. 
+    > In backtracking, we prune paths that cannot lead to a solution, generating far fewer possibilities.
+
+
+// let curr represent the thing you are building
+// it could be an array or a combination of variables
+function backtrack(curr) {
+    if (base case) {
+        Increment or add to answer
+        return
+    }
+
+    for (iterate over input) {
+        Modify curr
+        backtrack(curr)
+        Undo whatever modification was done to curr
+    }
+}
+
+> each call to the function backtrack represents a node in the tree 
+> each iteration in the for loop represents a child of the curent node 
+> calling backtrack() in that loop reprents moving to a child 
+> the line where we undo th modifications is the "backtracking" step and is dquivalent to maving back up the tree from a child to parent 
+> the path from the root to the node represents a candidate that is being built
+> leaf nodes are complete solutions and represent when the base case is reached
+
+
+
+Permutaions
+    > A permutation contains all the elements of nums with no duplicates.
+    > givin [1, 2, 3]
+    > return [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
+
+
+Subsets
+    > givin [1, 2, 3]
+    > return [[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]
+    > subset can have any length up to N 
+    > Order does not matter -> [1,2] and [2,1] is the same subet 
