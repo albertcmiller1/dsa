@@ -15,3 +15,12 @@ def subsets(nums):
     return soln 
 
 print(subsets([1, 2, 3]))
+
+'''
+2^n subets where n is the length of the input array 
+for each element, we can either take it or not take it. 
+at each node, we make a copy of curr so we get 
+O(n*2^n)
+
+
+'''

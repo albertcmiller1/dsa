@@ -2,6 +2,9 @@ def bruteforce(n):
     if n <= 1: 
         return n
     return bruteforce(n-1) + bruteforce(n-2)
+'''
+O(2^n) because every call to bruteforce creates 2 more calls to bruteforce
+'''
 
 print(bruteforce(5)) # 1 1 2 3 5 
 '''

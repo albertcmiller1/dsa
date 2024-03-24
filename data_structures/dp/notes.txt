@@ -1,0 +1,23 @@
+dynamic programming is just optimized recursion
+memoization
+if the range of states is known, then it may be much better in some languages to use an array to cache values instead of using hashing.
+Every top-down implementation can be implemented bottom-up and vice versa.
+The things that define a DP algorithm are the base cases and recurrence relation
+
+> Usually, a bottom-up implementation is faster. 
+> This is because iteration has less overhead than recursion, although this is less impactful if your language implements tail recursion.
+
+> However, a top-down approach is usually easier to write. 
+> With recursion, the order that we visit states does not matter. 
+> With iteration, if we have a multidimensional problem, it can sometimes be difficult figuring out the correct configuration of your for loops.
+
+Its probably a DP problem if...
+> problem is asking for an optimal value (max or min) of something or the number of ways to do something.
+> At each step, you need to make a "decision", and decisions affect future decisions.
+
+The number of state variables used is the dimensionality of an algorithm.
+    > An index along an input string, array, or number. 
+    > This is the most common state variable and will be a state variable in almost all problems, and is frequently the only state variable
+
+Big O
+> if there are N possible states, and the work done at each state is F, then your time complexity will be O(N⋅F)
