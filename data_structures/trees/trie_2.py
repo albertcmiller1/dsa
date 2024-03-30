@@ -1,5 +1,5 @@
-words = ["foo", "food"]
-
+# words = ["foo", "food"]
+words = ["a","b"]
 
 trie_head = {}
 for word in words:

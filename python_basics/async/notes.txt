@@ -1,0 +1,4 @@
+https://geekpython.medium.com/asyncio-how-to-use-async-await-in-python-ef4372a8c2c5
+
+
+A coroutine is a function that can suspend its execution before reaching the return and it can indirectly pass the control to another coroutine for some time.

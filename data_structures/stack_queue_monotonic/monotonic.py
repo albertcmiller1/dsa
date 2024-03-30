@@ -9,7 +9,7 @@ for num in nums:
     while stack and stack[-1] >= num:
         stack.pop()
     # Between the above and below lines, do some logic depending on the problem
-    stack.push(num)
+    stack.append(num)
 
 # stack = [1, 5, 8, 14]
 
