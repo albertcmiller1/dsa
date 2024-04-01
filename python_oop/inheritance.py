@@ -1,6 +1,8 @@
 '''
 Inheritance allows capabilities of existing class to be reused and if required extended to design new class.
 Instead of starting from scratch, you can create a class by deriving it from a pre-existing class by listing the parent class in parentheses after the new class name.
+https://stackoverflow.com/questions/576169/understanding-python-super-with-init-methods
+https://realpython.com/python-super/
 '''
 
 class Parent: # define parent class

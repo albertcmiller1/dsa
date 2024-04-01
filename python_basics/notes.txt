@@ -4,3 +4,6 @@ Keywords:      https://www.w3schools.com/python/python_ref_keywords.asp
 Tutorials: 
     > https://www.w3schools.com/python/default.asp
     > https://www.tutorialspoint.com/python/index.htm
+
+tips and tricks: 
+    > https://www.youtube.com/watch?v=fMRzuwlqfzs&ab_channel=JackofSome
