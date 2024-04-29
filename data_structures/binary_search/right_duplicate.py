@@ -1,3 +1,4 @@
+import bisect
 arr = [0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5]
 
 def right_bs(arr, target):
@@ -15,3 +16,9 @@ assert right_bs(arr, 4) == 11
 assert right_bs(arr, 5) == len(arr)
 assert right_bs(arr, 6) == len(arr)
 assert right_bs(arr, -5) == 0
+
+assert bisect.bisect_right(arr, 0) == 2
+assert bisect.bisect_right(arr, 4) == 11
+assert bisect.bisect_right(arr, 5) == len(arr)
+assert bisect.bisect_right(arr, 6) == len(arr)
+assert bisect.bisect_right(arr, -5) == 0
