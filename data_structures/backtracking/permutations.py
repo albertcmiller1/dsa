@@ -2,9 +2,9 @@ def permute(nums):
     '''
                 [1,2,3]
 
-                1.   2.   3 
+                1   2   3 
 
-    1. 2. 3.   1 2 3     1 2 3        
+    1 2 3         1 2 3      1 2 3        
 
     etc..
 
@@ -25,7 +25,8 @@ def permute(nums):
     backtrack()
     return soln
 
-print(permute([1, 2, 3]))
+print(permute(list(set(["a", "b", "a", "c"]))))
+# print(permute([1, 2, 3]))
 '''
 O(n * !n)
 top level makes n calls, then n-1 for each level below 

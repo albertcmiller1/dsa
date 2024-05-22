@@ -30,12 +30,13 @@ def combine(n, k):
     return soln 
 
 print(combine(4, 2))
+
+
+
 '''
 first call loop run n times 
 then n-1 
 aka n!
 we also copy an array of size k 
 so O(k*n!) is a close approximation 
-
-
 '''

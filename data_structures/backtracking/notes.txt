@@ -48,3 +48,11 @@ Subsets
     > return [[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]
     > subset can have any length up to N 
     > Order does not matter -> [1,2] and [2,1] is the same subet 
+
+
+
+> Subsets
+> Subsequences
+> Substrings
+> Combinations
+> Permutaions
