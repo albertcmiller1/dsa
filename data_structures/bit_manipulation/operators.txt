@@ -41,9 +41,21 @@ https://wiki.python.org/moin/BitwiseOperators
 
 x << y
 ---------
-> Returns x with the bits shifted to the left by y places (and new bits on the right-hand-side are zeros). This is the same as multiplying x by 2**y.
+> Left shitf 
+> shifts the bits of a binary number to the left by a specified number of positions 
+> this operation is equivalent to multiplying the number by 2 raised to the power of the shift amount 
+> 001 << 1 --> 010
+> 010 << 1 --> 100
+> 100 << 1 --> 000
+
 
 
 x >> y
 ---------
-> Returns x with the bits shifted to the right by y places. This is the same as //'ing x by 2**y.
+> Right shift 
+> Shifts bits of a binary number to the right by a specified number of positions 
+> Equivalent to dividing the number by 2 raised to the power of the shift amount
+> if we have an odd number, we will round down 
+> ex) 100 >> 1 --> 010
+> ex) 010 >> 1 --> 001
+> ex) 001 >> 1 --> 000
