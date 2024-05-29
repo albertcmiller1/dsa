@@ -1,1 +1,20 @@
-https://medium.com/the-researchers-guide/introduction-to-pyspark-a61f7217398e
+basic functions
+> https://medium.com/the-researchers-guide/introduction-to-pyspark-a61f7217398e
+
+spark architecture 
+> https://medium.com/@ykothari99/pyspark-inner-workings-how-execution-happens-in-pyspark-68b3b42a562d#:~:text=The%20PySpark%20application%20swings%20into,updates%2C%20indicating%20success%20or%20failure.
+
+Driver and executors 
+> https://medium.com/sparkbyexamples/what-are-the-specific-roles-of-spark-driver-and-executor-a17f90c7e7fd#:~:text=In%20Apache%20Spark%2C%20an%20Executor,worker%20nodes%20in%20the%20cluster.
+
+Coalese
+> https://medium.com/@ykothari99/coalesce-in-spark-the-internal-working-47727d064958
+
+Partitioning strategies 
+> https://medium.com/@ykothari99/partitioning-strategies-in-spark-e1a0164a7673
+
+How Cache works 
+> https://medium.com/@charchitpatidar/how-cache-works-in-apache-spark-aea6eeb3fd03
+
+Caching and Persistence 
+> https://medium.com/@sc1abhis/spark-caching-and-persistence-for-efficient-data-processing-4a8ade181e8c#:~:text=The%20rationale%20behind%20caching%20is,processing%20time%20and%20resource%20utilization.
