@@ -17,8 +17,9 @@ def modify_global_variable_correctly():
     print("Value of x inside the function after incrementing:", x)
 
 # Calling functions
-print_global_variable()
-modify_global_variable_correctly()
+# print_global_variable()
+# modify_global_variable_correctly()
+print(x) # will be the updated value 
 
 '''
 In Python, you can access global variables from within a function without any issues. 
@@ -27,3 +28,16 @@ you need to use the global keyword to explicitly declare that you intend to modi
 rather than creating a local variable with the same name. 
 This is a safety mechanism in Python to prevent accidental modification of global variables within functions.
 '''
+
+
+
+def print_y():
+    print(y) # y is not defined error
+y = 1
+
+z = 5
+def print_z(): 
+    z = 6
+    print(z)
+print_z() # 6 
+print(z) # 5

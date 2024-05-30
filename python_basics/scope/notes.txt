@@ -1,0 +1,9 @@
+4 Types of scope: 
+    1. Built-In Scope 
+        > all the variables avaliable when we start the python interpreter 
+        > import keyword
+        > keyword.kwlist
+    2. Global Scope 
+        > variables can be used anywhere within the file it's defined
+    3. Local Scope 
+    4. Nonlocal Scope 

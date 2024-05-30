@@ -16,22 +16,24 @@ https://wiki.python.org/moin/BitwiseOperators
 ---------
 > bitwise or
 > Each bit of the output is 0 if the corresponding bit of x AND of y is 0, otherwise it's 1.
+> good way to copy over a number when shifting a new number. ex) 1000000 | 0001010 => 1001010
 > ex) 
-        0 & 0 => 0 
-        0 & 1 => 1 
-        1 & 0 => 1 
-        1 & 1 => 1
+        0 | 0 => 0 
+        0 | 1 => 1 
+        1 | 0 => 1 
+        1 | 1 => 1
 
 ^
 ---------
 > bitwise exclusive or
 > Each bit of the output is the same as the corresponding bit in x if that bit in y is 0, and it's the complement of the bit in x if that bit in y is 1.
 > if we xor any number with 0, we get the original number. --> 0000 ^ 1010 = 1010
+> if we xor any number with itself, we get 0
 > ex) 
-        0 & 0 => 0 
-        0 & 1 => 1 
-        1 & 0 => 1 
-        1 & 1 => 0
+        0 ^ 0 => 0 
+        0 ^ 1 => 1 
+        1 ^ 0 => 1 
+        1 ^ 1 => 0
 
 ~
 ---------
