@@ -26,7 +26,7 @@ class Modulus:
         return self.n%self.d
       
 class Div_mod(Division, Modulus):
-    def __init__(self, a,b):
+    def __init__(self, a, b):
         self.n=a
         self.d=b
 

@@ -1,7 +1,7 @@
 from abc import ABC, abstractclassmethod
 
 class Shape(ABC): 
-    @abstractclassmethod
+    @abstractclassmethod # i think this works but is techically wrong. abstractclassmethod should be used on class methods: def foo(cls, param)
     def area(self): pass
 
     @abstractclassmethod

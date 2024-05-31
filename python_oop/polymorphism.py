@@ -23,6 +23,5 @@ class rectangle(shape):
         print("Draw a rectangle")
         return
 
-shapes = [circle(), rectangle()]
-for shp in shapes:
+for shp in [circle(), rectangle()]:
    shp.draw()

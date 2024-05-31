@@ -2,6 +2,8 @@
 An instance method accesses the instance variables of the calling object 
 because it takes the reference to the calling object. 
 But it can also access the class variable as it is common to all the objects.
+
+>> ask ChatGPT the difference between class method and instance method
 '''
 
 class Employee:

@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+import random
 
 class Transaction(ABC):
     def __init__(self, customerId, tellerId):
@@ -44,8 +45,6 @@ class BankTeller:
 
     def get_id(self):
         return self._id
-
-import random
 
 class BankBranch:
     def __init__(self, address, cash_on_hand, bank_system):
