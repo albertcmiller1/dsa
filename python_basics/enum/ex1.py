@@ -13,4 +13,4 @@ print(type(obj), obj.name, obj.value)
 print()
 
 for sub in subjects:
-   print (sub.name, sub.value)
+   print(sub.name, sub.value)
