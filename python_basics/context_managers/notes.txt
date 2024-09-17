@@ -1,0 +1,14 @@
+Context Manager 
+    > an object that is used to manage resources, such as 
+        file handling, network connections, and database connections. 
+        It provieds a way to allocate and release resources automatically 
+        when they are no longer needed, ensuring proper cleanup and 
+        preventing resourse leaks. 
+    > typacally used with python's "with" statement, which guaranteed that the 
+        resource managed by the context manager are properly released at the end of the block, 
+        even if an exception occurs. 
+    > magic methods used: __enter__ and __exit__
+
+*resource leak -> a particular type of resource consumption by a computer 
+                    program where the program does not release resources it has acquireed. 
+
